@@ -2,18 +2,19 @@
 
 ### Description
 
-sklearnfast is a python package that allows you to test your scikit-learn models with a single line of code. It is designed to be used in Jupyter Notebooks and is inspired by the [fastai]('www.fast.ai') library.
+sklearnfast is a python package that allows you to test your scikit-learn models with a single line of code. It is designed to be used in Jupyter Notebooks and is inspired by the [fastai](https://github.com/fastai/fastai) library.
 
 ### Installation
 
 ```bash
 pip install sklearnfast
+pip install scikit-learn, pandas
 ```
 
 ### Usage
 
 ```python
-from sklearnfast.test import Classifier
+from sklearnfast.test import classification_test
 from sklearn.datasets import load_breast_cancer
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
@@ -23,8 +24,13 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 df['target'] = data.target
 
 model = RandomForestClassifier()
-result = Classifier(model, df, 'target')
+result = classification_test(model, df, 'target')
 print(result)
+
+# {'f1': 0.972972972972973,
+#  'accuracy': 0.9649122807017544,
+#  'precision': 0.9722222222222222,
+#  'recall': 0.9736842105263158}
 ```
 
 ### Contributing
