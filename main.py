@@ -1,4 +1,4 @@
-from sklearnfast.test import classification_test
+from sklearnfast.modelinfo import classification_info
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import load_breast_cancer
 from pprint import pprint
@@ -9,5 +9,5 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 df['target'] = data.target
 
 model = RandomForestClassifier()
-result = classification_test(model, df, 'target')
-pprint(result)
+(model, info) = classification_info(model, df, 'target')
+pprint(info)
