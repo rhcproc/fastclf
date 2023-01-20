@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='sklearnfast', 
-    version='0.0.3',
+    version='0.0.12',
     description='fastsklearn is a package that makes it easy to test different models on different datasets. ',
     author='rhcproc',
     author_email='rhcproc@gmail.com',
