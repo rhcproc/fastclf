@@ -28,4 +28,10 @@ def classification_info(
         'accuracy': accuracy_score(y_test, y_pred)
     })
 
-
+def classification_predict(model, X):
+    y_pred = model.predict(X)
+    return y_pred
+    
+def classification_predict_proba(model, X):
+    y_pred_proba = model.predict_proba(X)
+    return y_pred_proba

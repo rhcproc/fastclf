@@ -12,7 +12,7 @@ setup(
     author_email='rhcproc@gmail.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rhcproc/fast-sklearn",
+    url="https://github.com/rhcproc/sklearnfast",
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
