@@ -8,7 +8,6 @@ sklearnfast is a python package that allows you to test your scikit-learn models
 
 ```bash
 pip install sklearnfast
-pip install scikit-learn, pandas
 ```
 
 ### Usage
