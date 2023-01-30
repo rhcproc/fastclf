@@ -11,7 +11,7 @@
 
 __title__ = 'sklearnfast'
 __license__ = 'MIT'
-__version__ = '0.0.15dev6'
+__version__ = '0.0.16'
 __author__ = 'Hans Park'
 __contact__ = 'rhcproc@gmail.com'
 __url__ = 'https://github.com/rhcproc/icecream'
