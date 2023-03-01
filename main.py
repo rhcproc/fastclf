@@ -1,5 +1,5 @@
-from sklearnfast.modelinfo import classification_info
-from sklearnfast.decomposition import pca
+from fastclf.modelinfo import classification_info
+from fastclf.decomposition import pca
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import load_breast_cancer
 from pprint import pprint

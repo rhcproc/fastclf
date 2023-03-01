@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 meta = {}
-with open(pjoin('sklearnfast', '__version__.py')) as f:
+with open(pjoin('fastclf', '__version__.py')) as f:
     exec(f.read(), meta)
 
 
