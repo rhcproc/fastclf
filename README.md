@@ -2,18 +2,20 @@
 
 ### Description
 
-sklearnfast is a python package that allows you to test your scikit-learn models with a single line of code. It is designed to be used in Jupyter Notebooks and is inspired by the [fastai](https://github.com/fastai/fastai) library.
+fastclf is a python package that allows you to test your scikit-learn models (classifier) with a single line of code. It is designed to be used in Jupyter Notebooks and is inspired by the [fastai](https://github.com/fastai/fastai) library.
+
+
 
 ### Installation
 
 ```bash
-pip install sklearnfast
+pip install fastclf
 ```
 
 ### Usage
 
 ```python
-from sklearnfast.modelinfo import classification_info
+from fastclf.modelinfo import classification_info
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import load_breast_cancer
 from pprint import pprint
